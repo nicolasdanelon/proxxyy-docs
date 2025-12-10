@@ -2,46 +2,50 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Instalar y compilar proxxyy
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Esta guía explica cómo descargar, compilar e instalar el proxy escrito en Rust.
 
-## Getting Started
+Requisitos
+- Rust y Cargo (instalador recomendado: `rustup`)
+  - macOS/Linux: `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`
+  - Windows: instala Rust desde https://www.rust-lang.org/tools/install
+  - Verifica: `rustc --version` y `cargo --version`
 
-Get started by **creating a new site**.
+Descarga
+- Clona el repositorio:
+  - ```bash
+    git clone https://github.com/nicolasdanelon/proxxyy.git
+    cd proxxyy
+    ```
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Compilación
+- Modo debug (rápido para desarrollo):
+  - ```bash
+    cargo build
+    # binario en: target/debug/proxxyy
+    ```
+- Modo release (optimizado):
+  - ```bash
+    cargo build --release
+    # binario en: target/release/proxxyy
+    ```
+- Instalar en tu PATH (útil para usar `proxxyy` desde cualquier directorio):
+  - ```bash
+    cargo install --path=.
+    # para actualizar en el futuro: cargo install --path=. --force
+    ```
 
-### What you'll need
+Probar ejecución mínima
+- Con parámetros mínimos (ajusta URLs según tu caso):
+  - ```bash
+    proxxyy -t 'https://api.example.com' -u 'http://localhost:6969'
+    ```
+- También puedes ejecutar sin instalar:
+  - ```bash
+    cargo run -- -t 'https://api.example.com' -u 'http://localhost:6969'
+    ```
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Notas
+- En macOS/Linux, asegúrate de que `~/.cargo/bin` esté en tu `PATH` para usar el binario instalado.
+- Si necesitas ejemplos de uso y parámetros disponibles, consulta la “Guía de Usuario” en el menú lateral.
