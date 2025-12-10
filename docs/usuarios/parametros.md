@@ -1,8 +1,10 @@
+---
 id: parametros
 title: Parámetros y uso
 description: Índice de opciones de proxxyy.
 sidebar_position: 0
 sidebar_label: Resumen de parámetros
+slug: /usuarios/parametros
 ---
 
 Selecciona un flag para ver detalles y ejemplos:

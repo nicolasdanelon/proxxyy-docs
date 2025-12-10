@@ -1,7 +1,9 @@
+---
 id: target-url
 title: URL de destino
 sidebar_label: URL de destino
 sidebar_position: 1
+slug: /usuarios/target-url
 ---
 
 Define la URL base de destino a la que se reenvían las solicitudes entrantes.

@@ -1,7 +1,9 @@
+---
 id: mock-config
 title: Mocks desde archivo TOML
 sidebar_label: Mocks (archivo TOML)
 sidebar_position: 5
+slug: /usuarios/mock-config
 ---
 
 Ruta a un archivo TOML con definiciones de mocks. Si hay match, la respuesta no se reenvía: se devuelve el mock.

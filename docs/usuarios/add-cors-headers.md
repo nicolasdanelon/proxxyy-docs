@@ -1,7 +1,9 @@
+---
 id: add-cors-headers
 title: CORS
 sidebar_label: CORS
 sidebar_position: 3
+slug: /usuarios/add-cors-headers
 ---
 
 Agrega cabeceras CORS por defecto a las respuestas: `Access-Control-Allow-Origin`, `-Methods`, `-Headers` y `Content-Type: application/json` si faltara.

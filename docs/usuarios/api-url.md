@@ -1,7 +1,9 @@
+---
 id: api-url
 title: URL del servidor (escucha)
 sidebar_label: URL del servidor
 sidebar_position: 2
+slug: /usuarios/api-url
 ---
 
 Define la URL donde proxxyy escucha (host y puerto).

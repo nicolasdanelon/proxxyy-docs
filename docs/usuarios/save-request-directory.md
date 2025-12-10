@@ -1,7 +1,9 @@
+---
 id: save-request-directory
 title: Guardar respuestas y generar mocks
 sidebar_label: Guardar respuestas
 sidebar_position: 6
+slug: /usuarios/save-request-directory
 ---
 
 Guarda respuestas en archivos y genera/actualiza un TOML de mocks (`mocked-request.toml`) en el directorio indicado.

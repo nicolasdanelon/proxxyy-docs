@@ -1,7 +1,9 @@
+---
 id: extra-header
 title: Cabeceras extra
 sidebar_label: Cabeceras extra
 sidebar_position: 4
+slug: /usuarios/extra-header
 ---
 
 Agrega cabeceras personalizadas a la respuesta. Puede repetirse.

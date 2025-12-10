@@ -1,7 +1,9 @@
+---
 id: show-headers
 title: Mostrar cabeceras en logs
 sidebar_label: Mostrar cabeceras
 sidebar_position: 7
+slug: /usuarios/show-headers
 ---
 
 Muestra las cabeceras de la solicitud entrante en los logs (por defecto están ocultas).
